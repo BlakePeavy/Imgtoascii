@@ -1,7 +1,9 @@
 from PIL import Image
+import os
 
+current_dir = os.getcwd()
 # Open the image and convert it to grayscale
-im = Image.open('your_image.png').convert('L')
+im = Image.open(current_dir + '/img/stop.png').convert('L')
 
 # Resize the image to a specified width
 width = 100
